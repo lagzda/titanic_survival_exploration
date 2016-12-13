@@ -1723,7 +1723,18 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: <em>One real time scenario I could think of is analysing a tennis player and predicting whether the hit is going to be out, in the net or OK. Some of the attributes could be ball's speed, spin, incline and the type of the hit.</em></p>
+<p><strong>Answer</strong>: *One real time scenario I could think of is analysing a tennis player and predicting whether the hit is going to be out, in the net or OK. Some of the attributes could be ball's speed, spin, incline and the type of the hit.</p>
+<p>The labels would be - Fault, Ok
+The features - Balls speed, spin</p>
+<p>An example of 5 rows -</p>
+<p>Speed km/h, spin,       Outcome</p>
+<p>100         topspin,    Ok</p>
+<p>150         underspin,  Error</p>
+<p>150         topspin,    Ok</p>
+<p>10          topspin,    Error</p>
+<p>20          underspin,  Error</p>
+<p>The outcome column is then stripped of the testing set and tested.
+*</p>
 
 </div>
 </div>
